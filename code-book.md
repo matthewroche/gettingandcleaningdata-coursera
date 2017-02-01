@@ -23,10 +23,18 @@ An integer (1 to 30) identifying the subject from whom the readings originated.
 A string identifying the activity performed by the subject when the readings were taken.
 
 * Columns 3:88
-These columns contain the feature details. Each column name contains details of how the feature was calculated. 
-  * Angle: 
-  * Time: 
-  * Mean: 
-  * FDS: 
-  * SD: 
-  * X / Y / Z: 
+These columns contain the feature details. Each value is the mean of all values collected during the activity specified. Each column name contains details of how the feature was calculated. Details of this description are found below: 
+  * Angle: Angle between to vectors.
+  * Time: Time to obtain signals
+  * Mean: Mean value
+  * FDS: Frequency domain signals
+  * SD: Standard deviation
+  * X / Y / Z: The axis over which the feature was measured
+
+The precise details of how these signals were obtained are found below, taken from the original data set code book.
+
+"The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag."
