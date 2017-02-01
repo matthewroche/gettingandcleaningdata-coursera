@@ -4,9 +4,9 @@ Repository of coursework for the Coursera 'Getting and Cleaning Data' course.
 # About
 This repository contains the files required by the final project of the Getting and Cleaning Data course on coursera. There are three files:
 
-1) This readme.md
-2) code-book.md - A code book containg details of the data set created
-3) run_analysis.R - The script that creates a tidy data set from the original data
+1. This readme.md
+2. code-book.md - A code book containg details of the data set created
+3. run_analysis.R - The script that creates a tidy data set from the original data
 
 # Original data
 Data source:
